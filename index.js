@@ -50,5 +50,5 @@ function rnd(min, max) {
  
     seed = (seed * 9301 + 49297) % 233280;
 
-    return Math.round(min + seed / 233280 * (max - min));
+    return Math.floor(min + seed / 233280 * (max - min));
 }
